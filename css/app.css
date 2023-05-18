@@ -1,0 +1,62 @@
+body {
+  font-family: 'Castoro Titling', cursive;
+}
+
+header {
+  min-height: 85px;
+  background: rgb(185, 238, 255, 0.9);
+}
+
+
+nav a::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: black;
+  transition: 1000ms;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+main {
+  min-height: 800px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.articleWrapper {
+  background: rgb(156, 231, 255, 0.9);
+}
+
+footer {
+  min-height: 100px;
+  background: rgb(185, 238, 255, 0.9);
+}
+
+@media (max-width:768px) {
+ nav a{
+  width: fit-content;
+ }
+
+ .form-select{
+  font-size: small;
+ }
+
+ form .input{
+  
+  font-size: small;
+ }
+}
